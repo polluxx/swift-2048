@@ -49,7 +49,6 @@ platform :ios do
   end
   
   lane :appbuild do
-      cert
       match(type: "appstore", readonly: true)
       gym(
         export_method: "app-store",
@@ -58,8 +57,9 @@ platform :ios do
             "com.sweekend.HealthDiet.recipes" => "ci@stockholmapplab.com"
           }
         },
-        export_team_id: "6VFZYN8H3V"
+        export_team_id: "J74658KGFA"
       )
+      sign
       pilot(app_identifier: "com.sweekend.HealthDiet.recipes")
   end
   
