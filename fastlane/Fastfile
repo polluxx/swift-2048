@@ -49,7 +49,6 @@ platform :ios do
   end
   
   lane :appbuild do
-      match(type: "appstore", readonly: true)
       gym(
         export_method: "app-store",
         export_options: {
