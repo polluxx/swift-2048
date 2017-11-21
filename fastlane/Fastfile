@@ -50,9 +50,9 @@ platform :ios do
   
   lane :appbuild do
     match(
-        git_url: "https://github.com/polluxx/swift-2048"
+        git_url: "https://github.com/polluxx/swift-2048",
         app_identifier: "com.sweekend.HealthDiet.recipes",
-        type: "appstore"
+        type: "appstore",
         username: "ci@stockholmapplab.com",
         team_id: "6VFZYN8H3V",
         clone_branch_directly: true
