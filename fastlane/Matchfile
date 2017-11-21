@@ -1,4 +1,4 @@
-git_url "https://github.com/polluxx/swift-2048"
+git_url "git@github.com:polluxx/swift-2048.git"
 
 type "appstore" # The default type, can be: appstore, adhoc, enterprise or development
 
