@@ -49,6 +49,8 @@ platform :ios do
   end
   
   lane :appbuild do
+      cert
+      sigh
       gym(
         export_method: "app-store",
         export_options: {
@@ -58,7 +60,6 @@ platform :ios do
         },
         export_team_id: "J74658KGFA"
       )
-      sign
       pilot(app_identifier: "com.sweekend.HealthDiet.recipes")
   end
   
