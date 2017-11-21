@@ -49,8 +49,15 @@ platform :ios do
   end
   
   lane :appbuild do
-    gym
-    pilot(app_identifier: "com.sweekend.HealthDiet.recipes")
+      gym(
+        export_method: "app-store",
+        export_options: {
+          provisioningProfiles: {
+            "com.sweekend.HealthDiet.recipes" => "ci@stockholmapplab.com"
+          }
+        }
+      )
+      pilot(app_identifier: "com.sweekend.HealthDiet.recipes")
   end
   
   lane :beta do
