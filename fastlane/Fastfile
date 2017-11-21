@@ -55,7 +55,8 @@ platform :ios do
           provisioningProfiles: {
             "com.sweekend.HealthDiet.recipes" => "ci@stockholmapplab.com"
           }
-        }
+        },
+        export_team_id: "6VFZYN8H3V"
       )
       pilot(app_identifier: "com.sweekend.HealthDiet.recipes")
   end
