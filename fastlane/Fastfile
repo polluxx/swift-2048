@@ -49,11 +49,11 @@ platform :ios do
   end
   
   lane :appbuild do
-    snapshot
     gym(scheme: "swift-2048")
   end
   
   lane :beta do
+    snapshot
     gym(scheme: "swift-2048")
   end
 
