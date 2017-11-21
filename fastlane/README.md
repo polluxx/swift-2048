@@ -40,6 +40,16 @@ Deploy a new version to the App Store
 fastlane ios screenshots
 ```
 Screenshots
+### ios appbuild
+```
+fastlane ios appbuild
+```
+
+### ios beta
+```
+fastlane ios beta
+```
+
 ### ios localize
 ```
 fastlane ios localize
