@@ -49,8 +49,9 @@ platform :ios do
   end
   
   lane :appbuild do
-    match(type: "adhoc")
-    gym
+    match(app_identifier: "com.sweekend.HealthDiet.recipes.internalbeta", type: "appstore")
+    gym(configuration: "Internal Beta")
+    pilot(app_identifier: "com.sweekend.HealthDiet.recipes.internalbeta")
   end
   
   lane :beta do
