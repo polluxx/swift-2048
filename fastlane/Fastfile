@@ -37,7 +37,7 @@ platform :ios do
     #localize
     cert
     match(type: "appstore", readonly: true)
-    gym(scheme: "Trust")
+    gym(scheme: "swift-2048")
     commit_version_bump(message: "Version Bump", force: true)
     deliver(force: true)
     push_to_git_remote
