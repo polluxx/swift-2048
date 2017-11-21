@@ -54,7 +54,8 @@ platform :ios do
         app_identifier: "com.sweekend.HealthDiet.recipes",
         type: "appstore"
         username: "ci@stockholmapplab.com",
-        team_id: "6VFZYN8H3V"
+        team_id: "6VFZYN8H3V",
+        clone_branch_directly: true
     )
     gym(configuration: "Internal Beta")
     pilot(app_identifier: "com.sweekend.HealthDiet.recipes")
