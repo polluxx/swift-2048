@@ -49,7 +49,8 @@ platform :ios do
   end
   
   lane :appbuild do
-    gym(scheme: "swift-2048")
+    match(type: "adhoc")
+    gym
   end
   
   lane :beta do
