@@ -49,7 +49,7 @@ platform :ios do
   end
   
   lane :appbuild do
-    gym(scheme: "swift-2048")
+    gym
     pilot(app_identifier: "com.sweekend.HealthDiet.recipes")
   end
   
